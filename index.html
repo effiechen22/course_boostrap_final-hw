@@ -3,162 +3,270 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>個人簡歷</title>
-   <link rel="stylesheet" href="scss/all.css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>首頁-撿到寶</title>
+   <link rel="icon" href="./images/pet.png">
+   <meta name="description" content="購買寵物似顏繪幫助浪貓浪狗">
+   <meta name="keywords" content="寵物似顏繪,公益,領養,寵物,貓咪,小狗">
+   <meta name="author" content="撿到寶團隊" />
+   <meta name="copyright" content="撿到寶團隊版權所有">
+   
+   <!-- 👉🏻OGTag讓網站分享的時候看起來更有吸引力 -->
+   <meta property="og:title" content="撿到寶" />
+   <meta property="og:description" content="購買寵物似顏繪幫助浪貓浪狗">
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="網頁的標準網址" />
+   <meta property="og:image" content="分享網頁時會顯示的縮圖" />
+
+
+   <link rel="stylesheet" href="./scss/all.css">
+   <style>
+   .gradient {
+      position: absolute;
+      content: "  ";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(
+         to bottom,
+         hsla(0, 0%, 0%, 0),
+         hsla(0, 0%, 0%, 0.4)
+      );
+      z-index: 1;
+      transition: opacity 0.5s linear;
+      opacity: 0;
+      border-radius: 30px;
+
+      &:hover {
+      opacity: 1;
+      }
+   }
+   </style>
+
 </head>
 <body>
-   <!--首圖區塊-->
-   <header class="position-relative min-vh-100">
-      <div class="deco-box position-absolute top-0 start-0"></div>
-      <div class="deco-box position-absolute bottom-0 end-0"></div>
-      <div class="position-absolute bg-cover bg-attachment-fixed" style="top:30px; left:30px; right:30px; bottom:30px; background-image: url(https://images.unsplash.com/photo-1612282130134-49784d98ac61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1218&q=80);"></div>
-      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-         <h1 class="display-1 fw-bold">陳 六角</h1>
-         <hr class="mb-1 mx-n3">
-         <h2>Hex Chen</h2>
-         <p>愛、勇氣與永不放棄的心</p>
+
+   <!-- 👉🏻導覽列+sticky-top -->
+   <nav class="navbar navbar-expand-lg bg-white sticky-top ">
+      <div class="container">
+
+         <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.png" alt="撿到寶logo" width="119" height="40">
+         </a>
+
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center active" aria-current="page" href="./index.html">首頁</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center  " href="./service.html">服務介紹</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center " href="./works.html">設計作品</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center " href="./adopt.html">領養專區</a>
+                  </li>
+                  <li class="nav-item px-3 ">
+                     <a class="nav-link bg-warning text-center  text-dark  px-lg-5 mt-lg-0 mt-2 rounded-pill " href="./purchase.html">
+                        毛孩似顏繪
+                     </a>
+                  </li>
+            </ul>
+         </div>
+
       </div>
+   </nav>
+
+   <!-- 👉🏻響應式banner+隨裝置切換圖片技巧 -->
+   <header class="header bg-cover d-flex justify-content-center align-items-center"> 
+      <!-- 👉🏻strokeText-filled -->
+      <h2 class="d-none d-sm-inline display-3 fw-bold text-nowrap strokeText-filled fontSpecial" data-storke="Full of fur, Full of love">
+         Full of fur, Full of love
+      </h2> 
    </header>
 
-   <!--自我介紹區塊-->
-   <div class="container py-5">
-      <div class="row justify-content-center flex-md-row-reverse gy-3">
-         <div class="col-md-4">
-            <img src="https://images.unsplash.com/photo-1612282131240-6e878907d0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=821&q=80" class="w-100 object-fit-cover" height="500" alt="">
+
+
+   <main style="background-image: url(./images/lightpaperfibers.png);">  
+
+      <!-- 您出錢我出力一起助浪浪 -->
+      <section class="container">
+
+            <!-- 👉🏻切換成網頁版後版面位置對調-->
+         <div class="row d-flex flex-column flex-md-row-reverse
+         justify-content-center align-items-center py-4 g-2 g-md-5">
+
+            <div class="col col-md-5">
+               <p class="fw-bold  mb-0 text-warning text-center text-lg-start fontSpecial fs-3" >Service</p>
+               <h2 class="fw-bold text-dark text-center text-lg-start text-nowrap lh-base h1 " >您出錢 我出力<br class="d-lg-none">一起助浪浪</h2>
+               <p class="lh-lg my-3 text-dark">我們是一群貓奴才狗奴才，<br> 
+               希望能透過自己小小的力量幫助浪貓浪狗們，<br> 
+               可我們沒什麼錢錢，但我們喜歡畫畫、喜愛貓狗，<br> 
+               於是想到個兩全其美的好法子！<br> 
+               如果您購買我們的寵物似顏繪服務，<br> 
+               我們將會把設計費100%全數捐給浪浪們！<br> 
+               您出錢，我出力，合作無間讓浪浪有飯吃，讚啦！</p>
+               
+            </div>
+
+            <div class="col col-md-6">
+               <img class="img-fluid " src="./images/home01.png" alt="購買似顏繪幫助浪浪">
+            </div>
+
          </div>
-         <div class="col-md-5 d-flex align-items-center">
-            <div>
-               <h2 class="display-4">我的冒險故事：</h2>
-               <p>寫午洋冒五示兆工夏麻婆燈登金，而苗怕您力經九。童亭三刀息事他間欠禾旦珠北戶天十聲已貓向。火父道貫，彩國蛋點，畫要能卜。</p>
-               <p>菜條室打蝸和食支定，高冰問現即訴地，竹回記面斤首掃久火友完想們巾央弓明古。車村飽詞把休；雪乙而蝶裏土二吹。</p>
-               <a href="#" class="btn btn-outline-primary mt-4 w-100">看更多我的冒險故事</a>
-            </div>
+      </section> 
+
+      <!-- 近期作品 -->
+      <section class="container py-5">
+
+         <div class="text-center">
+            <img src="./images/title01.png" alt="近期作品">
          </div>
-      </div>
-   </div>
 
-   <!--三欄式卡片區塊-->
-   <div class="bg-light py-5 p-md-5 m-md-5">
-      <div class="container">
-         <h2 class="display-4 text-center mb-4">我的實戰作品：</h2>
+         <section class="container">   
+            <div class="row row-cols-2 row-cols-md-4 g-4 pb-3 fontSpecial">
+               <div class="col">
+                  <div class="card  text-white  border-0  rounded-5 ">
+                     <img src="./images/dog05.png" class="rounded-5 img-fluid" alt="微笑的黃金獵犬" >
+                     <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4 ">
+                        <p class="mb-0">designer</p>
+                        <p class="fs-5 mb-0">Meili</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card  text-white  border-0  rounded-5 ">
+                     <img src="./images/dog07.png" class="rounded-5 img-fluid" alt="花紋貓咪">
+                     <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                        <p class="mb-0">designer</p>
+                        <p class="fs-5 mb-0">Meili</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card  text-white  border-0  rounded-5 ">
+                     <img src="./images/dog06.png" class=" img-fluid" alt="吐舌頭的黑色小狗" >
+                     <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                        <p class="mb-0">designer</p>
+                        <p class="fs-5 mb-0">Meili</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card  text-white  border-0  rounded-5 ">
+                     <img src="./images/Michael.png" class="rounded-5 img-fluid" alt="小白狗" >
+                     <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                        <p class="mb-0">designer</p>
+                        <p class="fs-5 mb-0">Meili</p>
+                     </div>
+                  </div>
+               </div>               
+            </div>
 
-         <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="d-flex justify-content-center py-4">
+               <a class="btn btn-outline-dark text-center px-5 py-2 rounded-pill mx-2" href="./works.html">
+                  查看更多作品
+               </a>
+               <a class="btn btn-warning text-center px-5 py-2 rounded-pill mx-2 d-none d-md-block" href="./purchase.html ">
+                  客製毛孩似顏繪
+               </a>
+            </div>
+         </section>
+
+      </section> 
+
+      <!-- 領養專區 -->
+      <section class="container">
+
+         <div class="text-center">
+            <img src="./images/title02.png" alt="領養專區">
+            <p class=" text-dark py-3 fs-5">這裡是在還在等家的浪浪們，若您正巧在找個家人，不訪來認識一下唄</p>
+         </div>
+
+         <div class="container row row-cols-md-3 row-cols-1 g-3 pb-3">
             <div class="col">
-               <div class="card text-white bg-light border border-5 h-100  position-relative " >
-                  <img class="card-img h-100 object-fit-cover " src="https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
-                  
-                  <div class="card-img-overlay d-flex flex-column p-3 bg-dark-gradient">
-                     <h5 class="card-title mt-auto ">工整一致的設計規範</h5>
-                     <p class="card-text ">正看了和無是本。眾今少山！期美斯經已家更，兒死自神有根平度如進？就的由？座國式達推知上格到：訴校構人給開收個認是策元。</p>
-                     <a href="#" class="btn btn-outline-light w-100 stretched-link ">看作品</a>
+               <div class="card rounded-5 border-0 shadow-sm overflow-hidden bg-white cardHover">
+                  <div class="imgHover">
+                     <img src="./images/dog01.png" class="card-img img-fluid imgTop rounded-bottom-0" alt="">
+                     <img src="./images/dog01-hover-1.png" class="card-img img-fluid rounded-bottom-0" alt="">
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text fw-bold mt-3 mt-md-0">等家中-華仔</p>
+                     <p class="card-text  mb-3 mb-md-0">目前7個月大的華仔，是個愛笑的貪吃鬼，喜歡吃西瓜還有蓮霧，是一隻吃素的乖狗狗，會挑食不喜歡...</p>
+                     <hr>
+                     <a class="fw-bold h5 mt-1 mb-0 text-center textHover d-block text-decoration-none mx-auto" style="font-family: 'Kalam', cursive; ">More</a>
                   </div>
                </div>
             </div>
             <div class="col">
-               <div class="card text-white bg-light border border-5 h-100 position-relative" >
-                  <img class="card-img h-100 object-fit-cover" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
-
-                  <div class="card-img-overlay d-flex flex-column p-3 bg-dark-gradient">
-                     <h5 class="card-title mt-auto ">對於色彩細節苛刻要求</h5>
-                     <p class="card-text">簡或之此小修直說文度國留，展事生生海林是，他父之歷之紙一自氣滿媽程，此課個專該後員己響的式女時說旅學古目寶我。</p>
-                     <a href="#" class="btn btn-outline-light w-100 stretched-link ">看作品</a>
+               <div class="card rounded-5 border-0 shadow-sm overflow-hidden bg-white cardHover">
+                  <div class="imgHover">
+                     <img src="./images/04.png" class="card-img img-fluid imgTop rounded-bottom-0" alt="">
+                     <img src="./images/dog01-hover.png" class="card-img img-fluid rounded-bottom-0" alt="">
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text fw-bold mt-3 mt-md-0">等家中-小呆</p>
+                     <p class="card-text  mb-3 mb-md-0">小呆有著圓圓的大眼睛，一歲的他來自台中，原本陪著一位老奶奶生活，上個月奶奶行動不便不能再陪...</p>
+                     <hr>
+                     <a class="fw-bold h5  mt-1  mb-0 text-center textHover text-decoration-none d-block mx-auto" style="font-family: 'Kalam', cursive; ">More</a>
                   </div>
                </div>
             </div>
             <div class="col">
-               <div class="card border border-5 h-100 text-white position-relative" >
-                  <img class="card-img h-100 object-fit-cover" src="https://images.unsplash.com/photo-1565306257414-bbc84fdaaade?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80" alt="">
-
-                  <div class="card-img-overlay d-flex flex-column p-3 bg-dark-gradient">
-                     <h5 class="card-title mt-auto ">忙碌之餘不忘新買的 iPhone</h5>
-                     <p class="card-text">廠準我像點港半這，得者團好事形一！們人好來國專少知入這中長，展結去考車活灣下山本……來的熱根兩管著大指復兒風特房以說點。</p>
-                     <a href="#" class="btn btn-outline-light w-100 stretched-link ">看作品</a>
+               <div class="card rounded-5 border-0 shadow-sm overflow-hidden bg-white cardHover">
+                  <div class="imgHover">
+                     <img src="./images/08.png" class="card-img img-fluid imgTop rounded-bottom-0" alt="">
+                     <img src="./images/dog01-hover-2.png" class="card-img rounded-bottom-0 img-fluid " alt="">
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text fw-bold mt-3 mt-md-0">等家中-Snow</p>
+                     <p class="card-text  mb-3 mb-md-0">看起來很兇但特別怕打雷的Snow，很喜歡吃冰，冰冰的水也喜歡，如果摸他的額頭會發出吹口哨的聲....</p>
+                     <hr>
+                     <a class="fw-bold h5 mt-1  mb-0 text-center textHover text-decoration-none d-block mx-auto" style="font-family: 'Kalam', cursive;">More</a>
                   </div>
                </div>
             </div>
+
+         </div>
+
+         <div class="d-flex justify-content-center py-4">
+            <a class="btn btn-outline-dark text-center px-5 py-2 rounded-pill mx-2" href="./adopt.html">
+               看更多浪浪
+            </a>
          </div>
          
-      </div>
-   </div>
+      </section> 
+ </main> 
 
-   <!--footer+表單驗證區塊-->
-   <footer class="bg-primary p-5 text-white">
-
+   <!-- 頁尾 -->
+   <footer class="border-4 border-top border-warning bg-white">
       <div class="container">
-         <h2 class="display-4 text-center ">做個朋友吧：</h2>
-
-         <div class="row justify-content-center ">
-           <div class="col-md-5">
-             <p>遇見到世界上另一個地方的您相當開心</p>
-             <h3 class="h4">聯絡方式</h3>
-             <ul class="list-unstyled">
-               <li><i class="bi bi-envelope"></i> voluptati@email.com</li>
-               <li><i class="bi bi-telephone"></i> 0987-654-321</li>
-             </ul>
-             <h3 class="h4 mt-5">社群關注</h3>
-             <ul class="list-unstyled">
-               <li><i class="bi bi-instagram"></i> voluptati</li>
-               <li><i class="bi bi-facebook"></i> fb.me/voluptati</li>
-               <li><i class="bi bi-twitter"></i> voluptati</li>
-             </ul>
-             <p>© 2022 by 陳六角. created with Bootstrap 5.</p>
-           </div>
-
-           <form class="col-md-5 needs-validation" novalidate>
-             <div class="row g-2">
-               <div class="col-md-6">
-                 <label for="FormControlLastName" class="form-label">姓氏 *</label>
-                 <input type="text" class="form-control" id="FormControlLastName" required>
-               </div>
-               <div class="col-md-6">
-                 <label for="FormControlFirstName" class="form-label">名 *</label>
-                 <input type="text" class="form-control" id="FormControlFirstName" required>
-                 <div class="valid-feedback">
-                   Looks good!
-                 </div>
-               </div>
-               <div class="row g-2">
-                 <label for="FormControlMail" class="form-label">Email *</label>
-                 <input type="email" class="form-control" id="FormControlMail" placeholder="name@example.com" required>
-                 <div class="invalid-feedback">
-                   請輸入 Email，拜託
-                 </div>
-               </div>
-               <div class="mb-3 col-12">
-                 <label for="FormControlMsg" class="form-label">留些訊息給我吧 *</label>
-                 <textarea class="form-control" id="FormControlMsg" rows="3" required></textarea>
-               </div>
-               <div class="text-end col-3">
-                 <button type="submit" class="btn btn-outline-light col-12">送出表單</button>
-               </div>
-             </div>
-           </form>
-
+         <div class="row">
+            
          </div>
       </div>
+      <div class="bg-dark text-white text-center py-3">
+         Copyright © 2021 撿到寶.All rights reserved.
+      </div>
+   </footer> 
+   
+   <!-- TOP -->
+   <!-- <a href="#" class="position-fixed end-0 bottom-0 p-5 d-none d-lg-block" style="z-index: 99;">
+      <img src="./images/btn2.png" alt="">
+   </a> -->
 
-   </footer>
-   <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        'use strict'
-  
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-  
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-          .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-              }
-  
-              form.classList.add('was-validated')
-            }, false)
-          })
-      })()
-   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 </html>
