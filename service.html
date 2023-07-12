@@ -3,95 +3,126 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>服務介紹-撿到寶</title>
-   <link rel="stylesheet" href="scss/all.css">
+   <link rel="icon" href="./images/pet.png">
+   <meta name="description" content="購買寵物似顏繪幫助浪貓浪狗">
+   <meta name="keywords" content="寵物似顏繪,公益,領養,寵物,貓咪,小狗">
+   <meta name="author" content="撿到寶團隊" />
+   <meta name="copyright" content="撿到寶團隊版權所有">
+   
+   <!-- 👉🏻OGTag讓網站分享的時候看起來更有吸引力 -->
+   <meta property="og:title" content="撿到寶" />
+   <meta property="og:description" content="購買寵物似顏繪幫助浪貓浪狗">
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="網頁的標準網址" />
+   <meta property="og:image" content="分享網頁時會顯示的縮圖" />
+   <link rel="stylesheet" href="./scss/all.css">
+
 </head>
 <body class="">
 
 
-   <!-- 上方導覽列 -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-white">
+   <!-- 👉🏻導覽列+sticky-top -->
+   <nav class="navbar navbar-expand-lg bg-white sticky-top ">
       <div class="container">
 
-         <a class="navbar-brand logoReplaceText" href="./index.html" 
-         style="background-image: url(./images/logo.png); height: 40px; width: 120px;">
-         撿到寶
+         <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.png" alt="撿到寶logo" width="119" height="40">
          </a>
 
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
 
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
-            </li>
-            <li class="nav-item  mx-2">
-            <a class="nav-link" href="#">服務介紹</a>
-            </li>
-            <li class="nav-item mx-2">
-            <a class="nav-link">設計作品</a>
-            </li>
-            <li class="nav-item mx-2">
-               <a class="nav-link">領養專區</a>
-            </li>
-            <li class="nav-item mx-2">
-               <a class="btn btn-primary rounded-5 px-5">毛孩似顏繪</a>
-            </li>
-         </ul>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center active" aria-current="page" href="./index.html">首頁</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center  " href="./service.html">服務介紹</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center " href="./works.html">設計作品</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link  text-center " href="./adopt.html">領養專區</a>
+                  </li>
+                  <li class="nav-item px-3 ">
+                     <a class="nav-link bg-warning text-center  text-dark  px-lg-5 mt-lg-0 mt-2 rounded-pill " href="./purchase.html">
+                        毛孩似顏繪
+                     </a>
+                  </li>
+            </ul>
+         </div>
 
       </div>
-
    </nav>
+
 
    <main style="background-image: url(./images/lightpaperfibers.png);">
 
    <!-- banner --> 
    
-   <div class="text-center">
-      <img class="img-fluid" src="./images/banner.png" alt="">
+   <div class="text-center py-4">
+         <img class="img-fluid d-none d-sm-inline" src="./images/banner.png" alt="">
+         <img class="img-fluid d-sm-none d-inline" src="./images/banner_service-sm.png" alt="">
    </div>
-   <div class="container">
+   
+   <div class="container py-1">
 
-      <div class="row row-cols-1 row-cols-md-4 py-sm-4 py-2 ">
-         <div class="col text-center d-flex d-md-block align-items-center justify-content-center">
-            <div class="mx-3">
-               <img src="./images/step01.png" alt="" class="">
-            </div>
-            <div class="" clas="">
-               <p class="fw-bold fs-4 mb-0 text-primary" style="font-family: 'Kalam', cursive; ">STEP1</p>
-               <p class="fw-bold">購買似顏繪服務</p>
-               <p>填寫購買表單<br> 並完成轉帳付款</p>
-            </div>
-         </div>
-         <div class="col text-center d-flex d-md-block align-items-center justify-content-center">
-            <div class="mx-3">
-               <img src="./images/step02.png" alt="" class="">
-            </div>
-            <div class="" clas="">
-               <p class="fw-bold fs-4 mb-0 text-primary" style="font-family: 'Kalam', cursive; ">STEP2</p>
-               <p class="fw-bold">購買似顏繪服務</p>
-               <p>填寫購買表單<br> 並完成轉帳付款</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 pb-5 gy-5 g-lg-0 ">
+         <div class="col  text-start text-md-center d-flex d-md-block align-items-center  ">
+            <div class="row g-1 justify-content-center align-items-center">
+               <div class="mx-3  col-5 col-md-12" style="width: 204px; height: 204px;">
+                  <img src="./images/step01.png" alt="" class="" width="200px;">
+               </div>
+               <div class=" col col-md-12" >
+                  <p class="fw-bold fs-4 mb-0 text-warning py-2" style="font-family: 'Kalam', cursive; ">STEP1</p>
+                  <p class="fw-bold h5 mb-3">購買似顏繪服務</p>
+                  <p>填寫購買表單<br> 並完成轉帳付款</p>
+               </div>
             </div>
          </div>
-         <div class="col text-center d-flex d-md-block align-items-center justify-content-center">
-            <div class="mx-3">
-               <img src="./images/step03.png" alt="" class="">
-            </div>
-            <div class="" clas="">
-               <p class="fw-bold fs-4 mb-0 text-primary" style="font-family: 'Kalam', cursive; ">STEP3</p>
-               <p class="fw-bold">購買似顏繪服務</p>
-               <p>填寫購買表單<br> 並完成轉帳付款</p>
+         <div class="col  text-start text-md-center d-flex d-md-block align-items-center  ">
+            <div class="row g-1 justify-content-center align-items-center">
+               <div class="mx-3  col-5 col-md-12" style="width: 204px; height: 204px;">
+                  <img src="./images/step02.png" alt="" class="" width="200px;">
+               </div>
+               <div class="  col col-md-12" >
+                  <p class="fw-bold fs-4 mb-0 text-warning py-2" style="font-family: 'Kalam', cursive; ">STEP2</p>
+                  <p class="fw-bold h5 mb-3">設計師繪製</p>
+                  <p>設計師繪製似顏繪 <br> 不提供改稿款</p>
+               </div>
             </div>
          </div>
-         <div class="col text-center d-flex d-md-block align-items-center justify-content-center">
-            <div class="mx-3">
-               <img src="./images/step04.png" alt="" class="">
+
+         <div class="col  text-start text-md-center d-flex d-md-block align-items-center  ">
+            <div class="row g-1 justify-content-center align-items-center">
+               <div class="mx-3  col-5 col-md-12" style="width: 204px; height: 204px;">
+                  <img src="./images/step03.png" alt="" class="" width="200px;">
+               </div>
+               <div class=" col col-md-12" >
+                  <p class="fw-bold fs-4 mb-0 text-warning py-2" style="font-family: 'Kalam', cursive; ">STEP3</p>
+                  <p class="fw-bold h5 mb-3 ">畫作提供</p>
+                  <p>電子檔案or實體化做寄送 <br> 設計師提供作品</p>
+               </div>
             </div>
-            <div class="" clas="">
-               <p class="fw-bold fs-4 mb-0 text-primary" style="font-family: 'Kalam', cursive; ">STEP4</p>
-               <p class="fw-bold">購買似顏繪服務</p>
-               <p>填寫購買表單<br> 並完成轉帳付款</p>
+         </div>
+         <div class="col  text-start text-md-center d-flex d-md-block align-items-center   ">
+            <div class="row g-1 justify-content-center align-items-center">
+               <div class="mx-3 col-5 col-md-12" style="width: 204px; height: 204px;">
+                  <img src="./images/step04.png" alt="" class="">
+               </div>
+               <div class=" col col-md-12" >
+                  <p class="fw-bold fs-4 mb-0 text-warning py-2" style="font-family: 'Kalam', cursive; ">STEP4</p>
+                  <p class="fw-bold h5 mb-3 text-nowrap">幫助浪浪</p>
+                  <p>每個月30號我們會將設計費 <br> 購買飼料，提供給xxx中途之家</p>
+               </div>
             </div>
          </div>
       </div>
@@ -99,40 +130,45 @@
    </div>
    </main>
 
+
    <!-- 頁尾 -->
-   <div class="footer border-4 border-top py-5 border-primary" >
-      <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-4 mx-5">
-               <div class="d-flex">
-                  <img src="./images/link01.png" alt="">
-                  <div class="d-flex flex-column ms-3">
+
+   <!-- 加入奴才團隊 -->
+   <footer class="border-4 border-top border-warning bg-white">
+      <section class="container py-5">
+         <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center gy-5 ">
+            <div class="col col-lg-5 d-flex align-items-center justify-content-center">
+                  <div class="p-3">
+                     <img class="img-fluid d-block" src="./images/link01.png" alt="頁尾-聯絡我們">      
+                  </div>         
+                  <div class=" ">
                      <h4>加入奴才團隊</h4>
-                     <p class="text-nowrap">我也會畫畫，希望能盡一份心力！</p>
-                     <div class="">
-                     <button class="btn btn-outline-dark rounded-5 px-5" >聯絡我們</button></div>
+                     <p>我也會畫畫，希望能盡一份心力！</p>
+                     <a class="btn btn-outline-dark text-center px-5 py-2 rounded-pill mx-2 text-nowrap disabled" href="#">
+                        聯絡我們
+                     </a>
                   </div>
-               </div> 
             </div>
-            
-            <div class="col-4 mx-5">
-               <div class="d-flex">
-                  <img src="./images/link02.png" alt="">
-                  <div class="d-flex flex-column ms-3">
-                     <h4>加入奴才團隊</h4>
-                     <p class="text-nowrap">我也會畫畫，希望能盡一份心力！</p>
-                     <div class="">
-                        <button class="btn btn-outline-dark rounded-5 px-5 ">領養專區</button>
-                     </div>
-                  </div>
+            <div class="col col-lg-5 d-flex align-items-center justify-content-center ">
+               <div class="p-3">
+                  <img class="img-fluid" src="./images/link02.png" alt="頁尾-領養專區">    
+               </div>       
+               <div class="">
+                  <h4>加入奴才團隊</h4>
+                  <p>我也會畫畫，希望能盡一份心力！</p>
+                  <a class="btn btn-outline-dark text-center px-5 py-2 rounded-pill mx-2 text-nowrap" href="./adopt.html">
+                     領養專區
+                  </a>
                </div>
             </div>
          </div>
+      </section> 
+      <div class="bg-dark text-white text-center py-3">
+         Copyright © 2021 撿到寶.All rights reserved.
       </div>
-   </div>   
-   <footer class="text-white text-center p-3 bg-dark" >
-      Copyright © 2021 撿到寶.All rights reserved.
-   </footer>
+
+   </footer> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 </html>
