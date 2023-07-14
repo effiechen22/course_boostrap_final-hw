@@ -1154,8 +1154,8 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-color:                    $dark;//var(--#{$prefix}link-color) !default;custom
+$nav-link-hover-color:              none;//var(--#{$prefix}link-hover-color) !default;custom
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           var(--#{$prefix}secondary-color) !default;
 $nav-link-focus-box-shadow:         $focus-ring-box-shadow !default;
@@ -1169,8 +1169,8 @@ $nav-tabs-link-active-bg:           var(--#{$prefix}body-bg) !default;
 $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           var(--#{$prefix}border-radius) !default;
-$nav-pills-link-active-color:       $component-active-color !default;
-$nav-pills-link-active-bg:          $component-active-bg !default;
+$nav-pills-link-active-color:       $warning;//$component-active-color !default;custom
+$nav-pills-link-active-bg:          none;//$component-active-bg !default;custom
 
 $nav-underline-gap:                 1rem !default;
 $nav-underline-border-width:        .125rem !default;
