@@ -10832,6 +10832,9 @@ body {
   .hoverShow {
     display: none;
   }
+  .nameHover:hover .hoverShow {
+    display: none;
+  }
 }
 .gradient {
   position: absolute;

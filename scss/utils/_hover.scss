@@ -57,4 +57,9 @@
       .hoverShow{
          display: none;   
       }  
+      .nameHover:hover{
+         .hoverShow{
+         display: none;   
+         }
+      }
    }
