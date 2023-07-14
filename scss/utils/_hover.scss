@@ -37,45 +37,27 @@
 
 
 // nav-link
-// transition: all .2s;
 
-.navHover{
-   .nav-link{
-      color: $dark;   
-   }
-
-   .active{      
-      color: $warning;              
-   }
-
-   .spanHover{
-      display: none;
-   }
-
-   &:hover {
-      & .nav-link{
-         color: $warning;
-      }
-   }
-}
-
-@include media-breakpoint-up(lg) { 
-   .navHover{
-      .nav-link:hover{
-         color: $warning;         
-      }
-
-      .active{    
-            .spanHover{
-               display: inline;
-            } 
-         }
-
-      &:hover {
-         & .spanHover{
-            display: inline;
-         }
-      }
-   }
+   .hoverShow{
+      display: none;   
+   }  
    
-}
+   .nameHover{
+      transition: all 0.2s step-start;
+   }
+      
+   .nameHover:hover{
+      color: $warning;
+      .hoverShow{
+      display: inline-block;     
+      }
+   }
+
+   @include media-breakpoint-down(md) {   
+
+      .nameHover:hover{
+         .hoverShow{
+            display: none;     
+         }
+      }
+   }

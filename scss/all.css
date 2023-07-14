@@ -10813,28 +10813,24 @@ body {
   opacity: 1;
 }
 
-.navHover .nav-link {
-  color: #3A3A3A;
-}
-.navHover .active {
-  color: #ffc107;
-}
-.navHover .spanHover {
+.hoverShow {
   display: none;
 }
-.navHover:hover .nav-link {
-  color: #ffc107;
+
+.nameHover {
+  transition: all 0.2s step-start;
 }
 
-@media (min-width: 992px) {
-  .navHover .nav-link:hover {
-    color: #ffc107;
-  }
-  .navHover .active .spanHover {
-    display: inline;
-  }
-  .navHover:hover .spanHover {
-    display: inline;
+.nameHover:hover {
+  color: #ffc107;
+}
+.nameHover:hover .hoverShow {
+  display: inline-block;
+}
+
+@media (max-width: 767.98px) {
+  .nameHover:hover .hoverShow {
+    display: none;
   }
 }
 .gradient {

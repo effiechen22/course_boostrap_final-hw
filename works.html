@@ -65,7 +65,7 @@
 
 
    <main style="background-image: url(./images/lightpaperfibers.png);">
-      <section class="container p-5">
+      <section class="container py-5">
          <div class="text-center pb-3">
             <img src="./images/title01.png" alt="近期作品">            
          </div>
@@ -76,17 +76,27 @@
 
                   <div class="nav flex-row flex-md-column nav-pills fontSpecial justify-content-center fw-normal h5 mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                      
-                     <button class="text-sm-start nav-link active px-md-0" id="designer-all-tab" data-bs-toggle="pill" data-bs-target="#designer-all" type="button" role="tab" aria-controls="designer-all" aria-selected="true">All</button>
-                     <button class="text-sm-start nav-link  px-md-0" id="designer-meili-tab" data-bs-toggle="pill" data-bs-target="#designer-all" type="button" role="tab" aria-controls="designer-meili" aria-selected="false">Meili</button>
-                     <button class="text-sm-start nav-link px-md-0" id="designer-zoe-tab" data-bs-toggle="pill" data-bs-target="#designer-all" type="button" role="tab" aria-controls="designer-zoe" aria-selected="false">Zoe</button>
-                     <button class="text-sm-start nav-link  px-md-0" id="designer-michael-tab" data-bs-toggle="pill" data-bs-target="#designer-all" type="button" role="tab" aria-controls="designer-michael" aria-selected="false">Michael</button>
-                     <button class="text-sm-start nav-link px-md-0" id="designer-birdy-tab" data-bs-toggle="pill" data-bs-target="#designer-all" type="button" role="tab" aria-controls="designer-birdy" aria-selected="false">Birdy</button>
+                     <button class="text-sm-start nav-link active px-md-0 nameHover fw-bolder" id="designer-all-tab" data-bs-toggle="pill" data-bs-target="#designer-all" type="button" role="tab" aria-controls="designer-all" aria-selected="true">
+                        <span class="hoverShow">–&ensp; </span>All</button>
+
+                     <button class="text-sm-start nav-link  px-md-0 nameHover fw-bolder" id="designer-meili-tab" data-bs-toggle="pill" data-bs-target="#designer-meili" type="button" role="tab" aria-controls="designer-meili" aria-selected="false">
+                        <span class="hoverShow">–&ensp; </span>Meili</button>
+
+                     <button class="text-sm-start nav-link px-md-0 nameHover fw-bolder" id="designer-zoe-tab" data-bs-toggle="pill" data-bs-target="#designer-zoe" type="button" role="tab" aria-controls="designer-zoe" aria-selected="false">
+                        <span class="hoverShow">–&ensp; </span>Zoe</button>
+
+                     <button class="text-sm-start nav-link  px-md-0 nameHover fw-bolder" id="designer-michael-tab" data-bs-toggle="pill" data-bs-target="#designer-michael" type="button" role="tab" aria-controls="designer-michael" aria-selected="false">
+                        <span class="hoverShow">–&ensp; </span>Michael</button>
+
+                     <button class="text-sm-start nav-link px-md-0 nameHover fw-bolder" id="designer-birdy-tab" data-bs-toggle="pill" data-bs-target="#designer-birdy" type="button" role="tab" aria-controls="designer-birdy" aria-selected="false">
+                        <span class="hoverShow">–&ensp; </span>Birdy</button>
                   </div>
                </div>
 
                <div class="col-12 col-md-9">
                   <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="designer-all" role="tabpanel" aria-labelledby="designer-all-tab">
+                     <!-- all -->
+                     <div class="tab-pane fade show active" id="designer-all" role="tabpanel" aria-labelledby="designer-all-tab">
 
                      <div class="row row-cols-lg-3 row-cols-2 gy-3">
                         <div class="col">
@@ -112,7 +122,7 @@
                               <img src="./images/dog06.png" class="rounded-5 img-fluid" alt="黑狗似顏繪" >
                               <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
                                  <p class="mb-0">designer</p>
-                                 <p class="fs-5 mb-0">Meili</p>
+                                 <p class="fs-5 mb-0">Zoe</p>
                               </div>
                            </div>
                         </div>
@@ -121,23 +131,117 @@
                               <img src="./images/Michael.png" class="rounded-5 img-fluid" alt="白狗似顏繪" >
                               <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
                                  <p class="mb-0">designer</p>
-                                 <p class="fs-5 mb-0">Meili</p>
+                                 <p class="fs-5 mb-0">Michael</p>
                               </div>
                            </div>
-                        </div>               
+                        </div>     
+                        <div class="col">
+                           <div class="card  text-white  border-0  rounded-5 ">
+                              <img src="./images/08.png" class="rounded-5 img-fluid" alt="哈士奇似顏繪" >
+                              <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                                 <p class="mb-0">designer</p>
+                                 <p class="fs-5 mb-0">Birdy</p>
+                              </div>
+                           </div>
+                        </div>           
                      </div>
 
-                    <!--<div class="tab-pane fade" id="designer-meili" role="tabpanel" aria-labelledby="designer-meili-tab">...meili</div>
-                    <div class="tab-pane fade" id="designer-zoe" role="tabpanel" aria-labelledby="designer-zoe-tab">...zoe</div>
-                    <div class="tab-pane fade" id="designer-michael" role="tabpanel" aria-labelledby="designer-michael-tab">...michael</div>
-                    <div class="tab-pane fade" id="designer-birdy" role="tabpanel" aria-labelledby="designer-birdy-tab">...Birdy</div> -->
+
+                     </div>
+                     <!-- Meili -->
+                     <div class="tab-pane fade show " id="designer-meili" role="tabpanel" aria-labelledby="designer-all-tab">
+
+                        <div class="row row-cols-lg-3 row-cols-2 gy-3">
+                           <div class="col">
+                              <div class="card  text-white  border-0  rounded-5 ">
+                                 <img src="./images/dog05.png" class="rounded-5 img-fluid" alt="黃金獵犬似顏繪" >
+                                 <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4 ">
+                                    <p class="mb-0">designer</p>
+                                    <p class="fs-5 mb-0">Meili</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col">
+                              <div class="card  text-white  border-0  rounded-5 ">
+                                 <img src="./images/dog07.png" class="rounded-5 img-fluid" alt="花貓似顏繪">
+                                 <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                                    <p class="mb-0">designer</p>
+                                    <p class="fs-5 mb-0">Meili</p>
+                                 </div>
+                              </div>
+                           </div>
+            
+                        </div>
+   
+                       <!--<div class="tab-pane fade" id="designer-meili" role="tabpanel" aria-labelledby="designer-meili-tab">...meili</div>
+                       <div class="tab-pane fade" id="designer-zoe" role="tabpanel" aria-labelledby="designer-zoe-tab">...zoe</div>
+                       <div class="tab-pane fade" id="designer-michael" role="tabpanel" aria-labelledby="designer-michael-tab">...michael</div>
+                       <div class="tab-pane fade" id="designer-birdy" role="tabpanel" aria-labelledby="designer-birdy-tab">...Birdy</div> -->
+                     </div>
+                     <!-- Zoe -->
+                     <div class="tab-pane fade show " id="designer-zoe" role="tabpanel" aria-labelledby="designer-all-tab">
+
+                        <div class="row row-cols-lg-3 row-cols-2 gy-3">
+                           <div class="col">
+                              <div class="card  text-white  border-0  rounded-5 ">
+                                 <img src="./images/dog06.png" class="rounded-5 img-fluid" alt="黑狗似顏繪" >
+                                 <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                                    <p class="mb-0">designer</p>
+                                    <p class="fs-5 mb-0">Zoe</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+   
+                       <!--<div class="tab-pane fade" id="designer-meili" role="tabpanel" aria-labelledby="designer-meili-tab">...meili</div>
+                       <div class="tab-pane fade" id="designer-zoe" role="tabpanel" aria-labelledby="designer-zoe-tab">...zoe</div>
+                       <div class="tab-pane fade" id="designer-michael" role="tabpanel" aria-labelledby="designer-michael-tab">...michael</div>
+                       <div class="tab-pane fade" id="designer-birdy" role="tabpanel" aria-labelledby="designer-birdy-tab">...Birdy</div> -->
+                     </div>
+                     <!-- Michael -->
+                     <div class="tab-pane fade show " id="designer-michael" role="tabpanel" aria-labelledby="designer-all-tab">
+
+                        <div class="row row-cols-lg-3 row-cols-2 gy-3">
+                           <div class="col">
+                              <div class="card  text-white  border-0  rounded-5 ">
+                                 <img src="./images/Michael.png" class="rounded-5 img-fluid" alt="白狗似顏繪" >
+                                 <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                                    <p class="mb-0">designer</p>
+                                    <p class="fs-5 mb-0">Michael</p>
+                                 </div>
+                              </div>
+                           </div>               
+                        </div>
+   
+                       <!--<div class="tab-pane fade" id="designer-meili" role="tabpanel" aria-labelledby="designer-meili-tab">...meili</div>
+                       <div class="tab-pane fade" id="designer-zoe" role="tabpanel" aria-labelledby="designer-zoe-tab">...zoe</div>
+                       <div class="tab-pane fade" id="designer-michael" role="tabpanel" aria-labelledby="designer-michael-tab">...michael</div>
+                       <div class="tab-pane fade" id="designer-birdy" role="tabpanel" aria-labelledby="designer-birdy-tab">...Birdy</div> -->
+                     </div>
+                     <!-- Birdy -->
+                     <div class="tab-pane fade show " id="designer-birdy" role="tabpanel" aria-labelledby="designer-all-tab">
+
+                        <div class="row row-cols-lg-3 row-cols-2 gy-3">
+                           <div class="col">
+                              <div class="card  text-white  border-0  rounded-5 ">
+                                 <img src="./images/08.png" class="rounded-5 img-fluid" alt="哈士奇似顏繪" >
+                                 <div class="gradient  d-flex flex-column justify-content-end ps-3 pb-4">
+                                    <p class="mb-0">designer</p>
+                                    <p class="fs-5 mb-0">Birdy</p>
+                                 </div>
+                              </div>
+                           </div>               
+                        </div>
+   
+                       <!--<div class="tab-pane fade" id="designer-meili" role="tabpanel" aria-labelledby="designer-meili-tab">...meili</div>
+                       <div class="tab-pane fade" id="designer-zoe" role="tabpanel" aria-labelledby="designer-zoe-tab">...zoe</div>
+                       <div class="tab-pane fade" id="designer-michael" role="tabpanel" aria-labelledby="designer-michael-tab">...michael</div>
+                       <div class="tab-pane fade" id="designer-birdy" role="tabpanel" aria-labelledby="designer-birdy-tab">...Birdy</div> -->
+                     </div>
                   </div>
-                </div>
                </div>
 
             </div>
-
-         
 
       </section >
    </main>
