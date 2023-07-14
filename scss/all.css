@@ -10829,7 +10829,7 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .nameHover:hover .hoverShow {
+  .hoverShow {
     display: none;
   }
 }

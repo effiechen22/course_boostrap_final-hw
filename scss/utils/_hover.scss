@@ -54,10 +54,7 @@
    }
 
    @include media-breakpoint-down(md) {   
-
-      .nameHover:hover{
-         .hoverShow{
-            display: none;     
-         }
-      }
+      .hoverShow{
+         display: none;   
+      }  
    }
