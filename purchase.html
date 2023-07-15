@@ -64,134 +64,204 @@
    </nav>
 
 
-   <main style="background-image: url(./images/lightpaperfibers.png);">
+   <main class="" style="background-image: url(./images/lightpaperfibers.png);" >
 
    <!-- banner --> 
    
-   <div class="container text-center py-4">
-         <img class="img-fluid d-none d-sm-inline" src="./images/banner.png" alt="">
-         <img class="img-fluid d-sm-none d-inline" src="./images/banner_service-sm.png" alt="">
+   <div class="container text-center py-4 px-0">
+         <img class="img-fluid d-none d-md-inline mb-3" src="./images/banner.png" alt="">
+         <img class="img-fluid d-md-none d-inline" src="./images/banner_service-sm.png" alt="">
 
-         <div class="row justify-content-center">
-            <div class="card col-lg-6 col-11 border-0   shadow border-top border-5 border-warning">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="card col-lg-8 col-11 border-0   shadow border-top border-5 border-warning p-4 p-md-5">
+                  
+                        <!--
+                           1.form-control form-label form-text
+                           2.label for和 input id要對應
+                           3.input type類型正確
+                           4.button
+                        <label for="firstName" class="form-label mb-0 d-flex justify-content-start" >名字</label>
+                        <input id="firstName" type="text" class="form-control"  aria-describedby="firstName">
+                        -->
 
-               <div class=" p-5  ">
-                  <h4 class="fw-bold mb-4">填寫訂購資訊</h4>
-                  <form class="row g-3">
-                     <div class="col-12 col-md-6">                       
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">名字</label>
-                        <input type="text" class="form-control">
-                     </div>
-                     <div class="col-12 col-md-6">
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">姓氏</label>
-                        <input type="text" class="form-control">
-                     </div>
+                     <!-- 表單內容 -->
+                     <form class="row g-3 needs-validation text-start" novalidate>
+                     <h4 class="fw-bold text-center">填寫訂購資訊</h4>
 
-                     <div class="col-12">
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">手機號碼</label>
-                        <input type="tel" class="form-control">
-                     </div>
-
-                     <div class="col-12">
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">電子郵件</label>
-                        <input type="mail" class="form-control">
-                     </div>
-
-                     <div class="col-12">
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">收件地址</label>
-                        <div class="row ">
-                           <div class="col-12 col-md-6">
-                              <select class="form-select " aria-label=".form-select-sm example">
-                                 <option selected>請選擇城市</option>                                 
-                                 <option value="1">基隆市</option>
-                                 <option value="2">臺北市</option>
-                                 <option value="3">新北市</option>
-                                 <option value="4">桃園市</option>
-                                 <option value="5">新竹市</option>
-                                 <option value="6">新竹縣</option>
-                                 <option value="7">苗栗縣</option>
-                                 <option value="8">臺中市</option>                              
-                                 <option value="9">彰化縣</option>
-                                 <option value="10">南投縣</option>
-                                 <option value="11">雲林縣</option>
-                                 <option value="12">嘉義市</option>
-                                 <option value="13">嘉義縣</option>
-                                 <option value="14">臺南市</option>
-                                 <option value="15">高雄市</option>
-                                 <option value="16">屏東縣</option>                              
-                                 <option value="17">宜蘭縣</option>
-                                 <option value="18">花蓮縣</option>
-                                 <option value="19">臺東縣</option>
-                                 <option value="20">澎湖縣</option>
-                                 <option value="21">金門縣</option>
-                                 <option value="22">連江縣</option>
-                              </select>
-                           </div>
-                           <div class="col-12 col-md-6">
-                              <select class="form-select " aria-label=".form-select-sm example">
-                                 <option selected>請選擇區域</option>
-                                 <option value="1">One</option>
-                                 <option value="2">Two</option>
-                                 <option value="3">Three</option>
-                               </select>
-                           </div>
-                           <div class="col-12 mt-2">
-                              <input type="text" class="form-control" placeholder="請輸入詳細地址">
-                           </div>
+                        <!-- 姓名姓氏 -->
+                        <div class="col-12"> 
+                           <div class="row gy-1">   
+                              <div class="form-group col-12 col-lg-6">  
+                                 <label for="firstName" class="form-label" >名字</label>
+                                 <input id="firstName" type="text" class="form-control"  aria-describedby="firstName" name="firstName" required>
+                              </div> 
+                              <div class="form-group col-12 col-lg-6">  
+                                 <label for="lastName" class="form-label" >姓氏</label>
+                                 <input id="lastName" type="text" class="form-control"  aria-describedby="lastName" name="lastName" required>
+                              </div> 
+                           </div> 
                         </div>
-                     </div>
 
-                     <div class="col-12">
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">選擇設計師風格</label>
-                        <select class="form-select " aria-label=".form-select-sm example">
+                        <!-- 手機號碼 -->
+                        <div class="col-12 form-group">
+                           <label for="phoneNumber" class="form-label">手機號碼</label>
+                           <input id="phoneNumber" type="tel" class="form-control"  aria-describedby="phoneNumber" name="phoneNumber" maxlength="10" required>
+                           <p class="form-text ">限輸入10個數字</p>
+                        </div>
 
-                           <option value="1">Meili－卡通蠟筆風格</option>
-                           <option value="2">Zoe－名畫惡搞風格</option>
-                           <option value="3">Michael－日系漫畫風格</option>
-                           <option value="4">Birdy－素描快寫風格</option>
-                           </select>
-                     </div>
+                        <!-- 電子郵件 -->
+                        <div class="col-12 form-group">
+                           <label for="email" class="form-label">電子郵件</label>
+                           <input id="email"  type="email" class="form-control" name="email" required>
+                        </div>
 
-                     <div class="col-12">
-                        <label for="" class="form-label mb-0 d-flex justify-content-start">付款方式</label>
-                        <select class="form-select " aria-label=".form-select-sm example">
-                           <option value="1">LinePay</option>
-                           <option value="2">貨到付款</option>
-                           <option value="3">轉帳付款</option>
-                           </select>
-                     </div>
+                        <!-- 收件地址 -->
+                        <div class="col-12">
+                           <div class="row gy-1 form-group" >
+                              <label for="address" class="form-label mb-0">收件地址</label>
+                              <!-- 城市 -->
+                              <div class="col-12 col-md-6">
+                                 <select class="form-select " aria-label=".form-select-sm example" name="county" required>
+                                    <option value="" disabled selected hidden>請選擇城市</option>                                 
+                                    <!-- 此處列出各個城市的選項 -->                              
+                                    <option value="基隆市">基隆市</option>
+                                    <option value="臺北市">臺北市</option>
+                                    <option value="新北市">新北市</option>
+                                    <option value="桃園市">桃園市</option>
+                                    <option value="新竹市">新竹市</option>
+                                    <option value="新竹縣">新竹縣</option>
+                                    <option value="苗栗縣">苗栗縣</option>
+                                    <option value="臺中市">臺中市</option>
+                                    <option value="彰化縣">彰化縣</option>
+                                    <option value="南投縣">南投縣</option>
+                                    <option value="雲林縣">雲林縣</option>
+                                    <option value="嘉義市">嘉義市</option>
+                                    <option value="嘉義縣">嘉義縣</option>
+                                    <option value="臺南市">臺南市</option>
+                                    <option value="高雄市">高雄市</option>
+                                    <option value="屏東縣">屏東縣</option>
+                                    <option value="宜蘭縣">宜蘭縣</option>
+                                    <option value="花蓮縣">花蓮縣</option>
+                                    <option value="臺東縣">臺東縣</option>
+                                    <option value="澎湖縣">澎湖縣</option>
+                                    <option value="金門縣">金門縣</option>
+                                    <option value="連江縣">連江縣</option>
+                                 </select>
+                              </div>
+                              <!-- 區域 -->
+                              <div class="col-12 col-md-6">
+                                 <select class="form-select " aria-label=".form-select-sm example" name="township"  required>
+                                    <option value="" disabled selected hidden>請選擇區域</option>     
+                                    <!-- 此處列出各個區域的選項 -->
+                                    <option value="中正區">中正區</option>
+                                    <option value="七堵區">七堵區</option>
+                                    <option value="暖暖區">暖暖區</option>
+                                    <option value="仁愛區">仁愛區</option>
+                                    <option value="中山區">中山區</option>
+                                    <option value="安樂區">安樂區</option>
+                                    <option value="信義區">信義區</option>
+                                 </select>
+                              </div>
+                              <div class="col-12">
+                              <!-- 詳細地址 -->
+                              <input type="text" class="form-control" placeholder="請輸入詳細地址" name="address"  required>
+                              </div>
 
-                     <div class="col-12 d-flex justify-content-start">
-                     <label for="" class="form-label mb-0">加購服務</label>
-                     </div>
-                     
-                     <div class="col-auto">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label me-3" for="exampleCheck1">送禮用包裝+100</label>
+                        </div>
+                           
+                           
+                        </div>
 
-                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                        <label class="form-check-label me-3" for="exampleCheck2">無框畫+250</label>
-                     </div>  
+                        <!-- 設計師風格 -->
+                        <div class="col-12">
+                           <label for="designer" class="form-label mb-0">設計師風格</label>
+                           <select id="designer" class="form-select " aria-label=".form-select-sm example" name="designer" required>
+                              <option value="" disabled selected hidden>請選擇設計師風格</option> 
+                              <option value="1">Meili－卡通蠟筆風格</option>
+                              <option value="2">Zoe－名畫惡搞風格</option>
+                              <option value="3">Michael－日系漫畫風格</option>
+                              <option value="4">Birdy－素描快寫風格</option>
+                              </select>
+                        </div>
 
-                     <div class="col-12 d-flex justify-content-start">
-                     <label for="psMsg" class="form-label mb-0 ">備註說明</label>
-                     </div>
-                     <textarea name="" id="psMsg" cols="30" rows="5" class="form-control"></textarea>
-                     
+                        <!-- 付款方式 -->
+                        <div class="col-12">
+                           <label for="payment" class="form-label mb-0">付款方式</label>
+                           <select id="payment" class="form-select " aria-label=".form-select-sm example" name="payment" required>
+                              <option value="" disabled selected hidden>選擇付款方式</option> 
+                              <option value="1">LinePay</option>
+                              <option value="2">貨到付款</option>
+                              <option value="3">轉帳付款</option>
+                              </select>
+                        </div>
 
+                        <!-- 加購服務 -->
+                        <div class="col-12">
+                           <label class="form-label mb-0t">加購服務</label>
+                           <div class="row my-2">
+                              <div class="col col-md-4">
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="package" id="包裝">
+                                    <label class="form-check-label me-3 h6" for="包裝">送禮用包裝+100</label>                                    
+                                 </div>
+                              </div>
+                              <div class="col col-md-4">
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="freehandDrawing" id="無框畫">
+                                    <label class="form-check-label me-3 h6" for="無框畫">無框畫+250</label>                                    
+                                 </div>
+                              </div>                              
+                           </div>
+                        </div>                 
 
-                     <p class="fw-bold h5 my-4">總金額 NT$ <span>300</span></p>
-                     <button type="submit" class="btn btn-md btn-warning rounded-5 px-5">
-                        送出訂購資訊
-                     </button>
-                  </form>
+                        <!-- 備註說明 -->
+                        <div class="col-12 form-group ">
+                           <label for="psMsg" class="form-label mb-0">備註說明</label>
+                           <textarea id="psMsg" rows="5" class="form-control" name="psMsg"></textarea>
+                        </div>
+                        
+                        <!-- 總金額 -->
+                        <p class="fw-bold h4 my-4 text-center">總金額 NT$ <span>300</span></p>
+
+                        <!-- 提交 -->
+                        <button type="submit" class="btn btn-md btn-warning rounded-5 ">
+                           送出訂購資訊
+                        </button>
+
+                        <!-- bootstrap表單驗證需要的js程式碼 -->
+                        <script>
+                           //Example starter JavaScript for disabling form submissions if there are invalid fields
+                           (function () {
+                           'use strict';
+                           
+                             // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                           var forms = document.querySelectorAll('.needs-validation');
+                           
+                             // Loop over them and prevent submission
+                           Array.prototype.slice.call(forms)
+                              .forEach(function (form) {
+                              form.addEventListener('submit', function (event) {
+                                 if (!form.checkValidity()) {
+                                 event.preventDefault()
+                                 event.stopPropagation()
+                                 }
+                           
+                                 form.classList.add('was-validated')
+                              }, false)
+                           })
+                           })()
+                        </script>
+                     </form>
+
+                  
+
                </div>
 
-            </div>
 
 
-
-            
+               
+            </div> 
          </div>
 
 
